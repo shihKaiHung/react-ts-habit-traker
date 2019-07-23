@@ -1,8 +1,6 @@
 .idea
 .next
 .vscode
-server.js
-server.js.map
 dist
 coverage
 node_modules
@@ -11,7 +9,3 @@ node_modules
 *.map
 .cache
 .awcache
-storybook-static
-/release
-cypress/screenshots
-cypress/videos
