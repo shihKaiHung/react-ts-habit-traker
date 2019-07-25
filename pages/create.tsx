@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { StorageImpl } from "../core/storage/StorageImpl";
 
 const Create = () => {
   const [name, setName] = useState("");
 
+  const storage = new StorageImpl();
+
+  const setHabit = () => {
+    console.log(name);
+    storage.setHabit(name);
+  }
+
   return (
     <InputGroup>
       <InputGroup>
-        <input />
+        <input onChange={(e) => setName(e.target.value)} />
         <label>Habit Name</label>
       </InputGroup>
+      <button onClick={setHabit}>Submit</button>
     </InputGroup>
   );
 };
