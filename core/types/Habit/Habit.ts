@@ -1,4 +1,4 @@
-interface Habit {
+export interface Habit {
   id: number;
   name: string;
   des: string;
@@ -7,6 +7,6 @@ interface Habit {
   };
 }
 
-interface ActiveDate {
+export interface ActiveDate {
   isActive: boolean;
 }
