@@ -1,6 +1,6 @@
 import React from "react";
 import { Main } from "../containers/Main";
 
-const Home = () => <Main />;
+const Index = () => <div><Main /></div>;
 
-export default Home;
+export default Index;
