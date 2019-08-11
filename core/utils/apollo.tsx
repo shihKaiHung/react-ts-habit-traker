@@ -16,7 +16,7 @@ export default (App: any) => {
   return class WithData extends Component {
     public static displayName = "withApollo(App)";
     public static async getInitialProps(ctx) {
-      const { Component, router } = ctx;
+      const { Component, router } = ctx
 
       let appProps = {};
       if (App.getInitialProps) {
